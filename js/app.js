@@ -12,35 +12,29 @@ function cargarEventListeners() {
      // Dispara cuando se presiona "Agregar Carrito"
      listaCursos.addEventListener('click', agregarCurso);
 
-     //Elimina cursos del carrito
-     carrito.addEventListener('click', eliminarCurso)
+     // Cuando se elimina un curso del carrito
+     carrito.addEventListener('click', eliminarCurso);
+
+     // Al Vaciar el carrito
+     vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
 
 }
 
+
+
+
 // Funciones
 // Función que añade el curso al carrito
-function agregarCurso(e) {
-     e.preventDefault();
+function agregarCurso(evt) {
+     evt.preventDefault();
      // Delegation para agregar-carrito
-     if(e.target.classList.contains('agregar-carrito')) {
-          const curso = e.target.parentElement.parentElement;
+     if(evt.target.classList.contains('agregar-carrito')) {
+          const curso = evt.target.parentElement.parentElement;
           // Enviamos el curso seleccionado para tomar sus datos
           leerDatosCurso(curso);
      }
 }
 
-//Elimina un curso del carrito
-function eliminarCurso(evt) {
-    if(evt.target.classList.contains('borrar-curso')) {
-        const cursoId = evt.target.getAttribute('data-id')
-
-        //Elimina del array de articulosCarrito poor el data-id
-        articulosCarrito=articulosCarrito.filter(curso => curso.id !== cursoId);
-
-
-        carritoHTML(); //Iteramos sobre el carrito y mostrar su HTML
-    }
-}
 // Lee los datos del curso
 function leerDatosCurso(curso) {
      const infoCurso = {
@@ -75,11 +69,11 @@ function leerDatosCurso(curso) {
 }
 
 // Elimina el curso del carrito en el DOM
-function eliminarCurso(e) {
-     e.preventDefault();
-     if(e.target.classList.contains('borrar-curso') ) {
+function eliminarCurso(evt) {
+     evt.preventDefault();
+     if(evt.target.classList.contains('borrar-curso') ) {
           // e.target.parentElement.parentElement.remove();
-          const cursoId = e.target.getAttribute('data-id')
+          const cursoId = evt.target.getAttribute('data-id')
           
           // Eliminar del arreglo del carrito
           articulosCarrito = articulosCarrito.filter(curso => curso.id !== cursoId);
