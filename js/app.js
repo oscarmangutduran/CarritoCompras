@@ -71,7 +71,7 @@ function leerDatosCurso(curso) {
 // Elimina el curso del carrito en el DOM
 function eliminarCurso(evt) {
      evt.preventDefault();
-     if(evt.target.classList.contains('borrar-curso') ) {
+     if(evt.target.classList.contains('borrar-producto') ) {
           // e.target.parentElement.parentElement.remove();
           const cursoId = evt.target.getAttribute('data-id')
           
@@ -98,7 +98,7 @@ function carritoHTML() {
                <td>${curso.precio}</td>
                <td>${curso.cantidad} </td>
                <td>
-                    <a href="#" class="borrar-curso" data-id="${curso.id}">X</a>
+                    <a href="#" class="borrar-producto" data-id="${curso.id}">X</a>
                </td>
           `;
           contenedorCarrito.appendChild(row);

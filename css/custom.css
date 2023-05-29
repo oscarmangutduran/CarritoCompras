@@ -1,8 +1,10 @@
 html {
     font-size: 62.5%;
+    background-color: #3f3b3b
+
 }
 body {
-    background-color: #f5f3f3
+    background-color: #3f3b3b
 }
 h1 {
     text-align: center;
@@ -18,13 +20,14 @@ header {
     padding: 20px 0 0 0;
     background: white;
     text-align: center;
+    background-color: gray
 }
 @media (min-width: 750px) {
     header {
         text-align: left;
     }
 }
-.borrar-curso {
+.borrar-producto {
     background-color: red;
     border-radius: 50%;
     padding: 5px 10px;
@@ -37,12 +40,13 @@ ul {
     list-style: none;
 }
 #hero {
-    background-image:url(../img/hero.jpg);
+    background-image:url(../img/hero2.jpg);
     height: 350px;
     background-size: cover;
 }
 #encabezado {
     margin: 30px 0;
+    color: white
 }
 .submenu {
     position: relative;
@@ -100,11 +104,11 @@ ul {
 
 .barra {
     padding: 20px 0;
-    background: #741d51; /* Old browsers */
-    background: -moz-linear-gradient(left, #741d51 0%, #e44e52 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #741d51 0%,#e44e52 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #741d51 0%,#e44e52 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#741d51', endColorstr='#e44e52',GradientType=1 ); /* IE6-9 */
+    background: #23118a; /* Old browsers */
+    background: -moz-linear-gradient(left, #23118a 0%, #1e4924 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #23118a 0%,#1e4924 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #23118a 0%,#1e4924 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23118a', endColorstr='#1e4924',GradientType=1 ); /* IE6-9 */
 }
 
 .barra p {
@@ -139,6 +143,8 @@ ul {
 }
 .agregar-carrito {
     margin:10px 0;
+    background-color: #1e4924 !important;
+    border-color:#1e4924 !important;
 }
 
 .card {
@@ -179,4 +185,9 @@ ul {
 display: block;
 margin-bottom: 10px;
 text-decoration: none;
+}
+
+
+.carrito{
+    margin-top: 10%
 }
