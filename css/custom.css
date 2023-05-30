@@ -4,7 +4,11 @@ html {
 
 }
 body {
-    background-color: #3f3b3b
+    background: #1e4924; /* Old browsers */
+    background: -moz-linear-gradient(left, #1e4924 0%, #4a39aa 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #1e4924 0%,#4a39aa 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #1e4924 0%,#4a39aa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e4924', endColorstr='#4a39aa',GradientType=1 ); /* IE6-9 */
 }
 h1 {
     text-align: center;
@@ -20,7 +24,12 @@ header {
     padding: 20px 0 0 0;
     background: white;
     text-align: center;
-    background-color: gray
+    padding: 20px 0;
+    background: #1e4924; /* Old browsers */
+    background: -moz-linear-gradient(left, #1e4924 0%, #23118a 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #1e4924 0%,#23118a 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #1e4924 0%,#23118a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e4924', endColorstr='#23118a',GradientType=1 ); /* IE6-9 */
 }
 @media (min-width: 750px) {
     header {
@@ -138,7 +147,7 @@ ul {
     background-image: url(../img/icono3.png);
 }
 
-#lista-cursos .row {
+#lista-productos .row {
     margin-bottom:20px;
 }
 .agregar-carrito {
@@ -191,3 +200,4 @@ text-decoration: none;
 .carrito{
     margin-top: 10%
 }
+
