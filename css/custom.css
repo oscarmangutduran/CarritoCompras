@@ -1,14 +1,8 @@
 html {
     font-size: 62.5%;
-    background-color: #3f3b3b
-
 }
 body {
-    background: #1e4924; /* Old browsers */
-    background: -moz-linear-gradient(left, #1e4924 0%, #4a39aa 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #1e4924 0%,#4a39aa 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #1e4924 0%,#4a39aa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e4924', endColorstr='#4a39aa',GradientType=1 ); /* IE6-9 */
+    background-color: #f5f3f3
 }
 h1 {
     text-align: center;
@@ -24,7 +18,6 @@ header {
     padding: 20px 0 0 0;
     background: white;
     text-align: center;
-    padding: 20px 0;
     background: #1e4924; /* Old browsers */
     background: -moz-linear-gradient(left, #1e4924 0%, #23118a 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(left, #1e4924 0%,#23118a 100%); /* Chrome10-25,Safari5.1-6 */
@@ -36,7 +29,7 @@ header {
         text-align: left;
     }
 }
-.borrar-producto {
+.borrar-curso {
     background-color: red;
     border-radius: 50%;
     padding: 5px 10px;
@@ -49,13 +42,13 @@ ul {
     list-style: none;
 }
 #hero {
-    background-image:url(../img/hero2.jpg);
+    background-image:url(../img/hero.jpeg);
     height: 350px;
     background-size: cover;
 }
 #encabezado {
     margin: 30px 0;
-    color: white
+    color: white;
 }
 .submenu {
     position: relative;
@@ -147,13 +140,11 @@ ul {
     background-image: url(../img/icono3.png);
 }
 
-#lista-productos .row {
+#lista-cursos .row {
     margin-bottom:20px;
 }
 .agregar-carrito {
     margin:10px 0;
-    background-color: #1e4924 !important;
-    border-color:#1e4924 !important;
 }
 
 .card {
@@ -196,9 +187,17 @@ margin-bottom: 10px;
 text-decoration: none;
 }
 
+
 /*Tamaño del logo del carrito */
 
 .carrito{
     margin-top: 10%
 }
 
+.contenedor{
+    background: #1e4924; /* Old browsers */
+    background: -moz-linear-gradient(left, #1e4924 0%, #23118a 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #1e4924 0%,#23118a 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #1e4924 0%,#23118a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e4924', endColorstr='#23118a',GradientType=1 ); /* IE6-9 */
+}

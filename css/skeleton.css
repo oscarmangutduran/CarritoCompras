@@ -360,6 +360,8 @@ form {
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .u-full-width {
+  color: #23118a;
+  font-weight: 600;
   width: 100%;
   box-sizing: border-box; }
 .u-max-full-width {
